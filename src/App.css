@@ -1,0 +1,222 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin-top: 6%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  max-width: 800px;
+  margin-top: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.transaction-form label {
+  font-weight: bold;
+  padding: 3%;
+}
+
+.transaction-form input,
+.transaction-form select,
+.transaction-form button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 90%;
+}
+
+.transaction-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.transaction-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Error Styling */
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+/* Table Styling */
+.transaction-table {
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.transaction-table th.dark {
+  
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.transaction-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.transaction-table button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.transaction-table button:hover {
+  opacity: 0.8;
+}
+
+.transaction-table button:nth-child(1) {
+  background-color: #ffc107;
+  color: #000;
+  margin: 3%;
+}
+
+.transaction-table button:nth-child(2) {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* General Themes */
+.app-container.light {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.app-container.dark {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #a71d2a;
+}
+
+/* Alert */
+.alert-popup {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Totals Section */
+.totals {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .transaction-table {
+      font-size: 14px;
+  }
+
+  .transaction-form {
+      padding: 10px;
+  }
+
+  .transaction-table td,
+  .transaction-table th {
+      padding: 5px;
+  }
+  body{
+    justify-content: center;
+  }
+}
+
+
+
+
+

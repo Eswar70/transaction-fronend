@@ -1,0 +1,87 @@
+/* Container for the form */
+.transaction-form {
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Label and input styling */
+.transaction-form input,
+.transaction-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Label Styling */
+.transaction-form input:focus,
+.transaction-form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Styling for form buttons */
+.transaction-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the submit button */
+.transaction-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for placeholders */
+.transaction-form input::placeholder,
+.transaction-form select::placeholder {
+    color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .transaction-form {
+        padding: 15px;
+    }
+
+    .transaction-form button {
+        padding: 10px;
+    }
+}
+
+/* Styling for input fields to make them visually clear */
+.transaction-form input,
+.transaction-form select {
+    background-color: #f9f9f9;
+}
+
+/* Styling the form's title and section */
+.transaction-form h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Error message styling */
+.transaction-form .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Animation for form submit button */
+.transaction-form button:active {
+    transform: scale(0.98);
+}

@@ -1,0 +1,14 @@
+/* Theme Toggle Button */
+.theme-toggle {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.theme-toggle button{
+    background-color: aqua;
+}
